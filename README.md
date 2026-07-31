@@ -103,8 +103,8 @@ curl "http://localhost:3000/expenses?category=Food"
 # Totals (overall + by category)
 curl http://localhost:3000/expenses/total/summary
 
-# Delete an expense
-curl -X DELETE http://localhost:3000/expenses/1
+# Delete an expense (using generated uuid)
+curl -X DELETE http://localhost:3000/expenses/42f0fc11-7a57-48fc-8f74-1ee6f4de03bc
 ```
 
 ## Design notes
